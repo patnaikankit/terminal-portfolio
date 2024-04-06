@@ -16,12 +16,13 @@ export const consoleOuput = (
                 <div>
                     {" "}
                     Available commands: <br/>
-                    <span className="text-purple-400 ml-3"> about</span> - Want to know me better<br />
-                    <span className="text-purple-400 ml-3"> socials</span> - Lorem ipsum dolor sit amet consectetur.<br />
-                    <span className="text-purple-400 ml-3"> skills</span> - Lorem ipsum dolor sit amet consectetur.<br />
-                    <span className="text-purple-400 ml-3"> projects</span> - Lorem ipsum dolor sit amet consectetur.<br />
-                    <span className="text-purple-400 ml-3"> resume</span> - Lorem ipsum dolor sit amet consectetur.<br />
-                    <span className="text-purple-400 ml-3"> clear</span> - Clear the terminal<br />
+                    <span className="text-teal-400 ml-3"> help</span> - You are here already and you obviously know what this does<br />
+                    <span className="text-teal-400 ml-3"> about</span> - Get to know me better<br />
+                    <span className="text-teal-400 ml-3"> contact</span> - If I seem interesting to you<br />
+                    <span className="text-teal-400 ml-3"> skills</span> - Stuff I think I am good at!<br />
+                    <span className="text-teal-400 ml-3"> projects</span> - Projects I have made so far<br />
+                    <span className="text-teal-400 ml-3"> resume</span> - Checkout my resume<br />
+                    <span className="text-teal-400 ml-3"> clear</span> - Clear the terminal<br />
                     {/* <span className="text-purple-400 ml-3"> experience</span> - Want to know me better<br /> */}
                 </div>
             );
@@ -34,48 +35,43 @@ export const consoleOuput = (
                 </div>
             );
 
-            case "socials":
+            case "contact":
                 return (
                     <div>
-                        <span className="text-purple-400">
-                            <a href="https://github.com/patnaikankit">Github</a> -{" "}
+                        <span className="text-teal-400">
+                            Mail -{" "}
                         </span>
-                        You can find all my projects here.<br />
+                        <a href="mailto:ankit.patnaik2003@gmail.com" className="underline">ankit.patnaik2003@gmail.com</a><br />
 
-                        <span className="text-purple-400">
-                            <a href="https://github.com/patnaikankit">LinkedIn</a> -{" "}
+                        <span className="text-teal-400">
+                            LinkedIn -{" "}
                         </span>
-                        You can find all my projects here.<br />
+                        <a href="https://www.linkedin.com/in/ankit-patnaik-102728230/" className="underline">https://www.linkedin.com/in/ankit-patnaik-102728230</a><br />
 
-                        <span className="text-purple-400">
-                            <a href="mailto:ankit.patnaik2003@gmail.com">Mail</a> -{" "}
+                        <span className="text-teal-400">
+                            Github -{" "}
                         </span>
-                        You can find all my projects here.<br />
+                        <a href="https://github.com/patnaikankit" className="underline">https://github.com/patnaikankit</a><br />
 
-                        <span className="text-purple-400">
-                            <a href="mailto:ankit.patnaik2003@gmail.com">Instagram</a> -{" "}
+                        <span className="text-teal-400">
+                            Twitter -{" "}
                         </span>
-                        You can find all my projects here.<br />
-
-                        <span className="text-purple-400">
-                            <a href="mailto:ankit.patnaik2003@gmail.com">Twitter</a> -{" "}
-                        </span>
-                        You can find all my projects here.<br />
+                        <a href="https://twitter.com/_Ankitpatnaik1_" className="underline">https://twitter.com/_Ankitpatnaik1_</a><br />
                     </div>
                 );
 
             case "skills": 
             return (
                 <div>
-                    <span className="text-purple-400">Languages -{" "}</span>
+                    <span className="text-teal-400">Languages -{" "}</span>
                     <br />
                     <span className="ml-7">C, C++, Javascript, Typescript, Python, Go</span> <br />
 
-                    <span className="text-purple-400">Frameworks/Libraries -{" "}</span>
+                    <span className="text-teal-400">Frameworks/Libraries -{" "}</span>
                     <br />
                     <span className="ml-7">Tailwind, React.js, Node.js, Express.js, Next.js, Numpy, Pandas, Django, Fiber, Gorilla Mux, Firebase</span> <br />                
 
-                    <span className="text-purple-400">Databases/Infrastructures -{" "}</span>
+                    <span className="text-teal-400">Databases/Infrastructures -{" "}</span>
                     <br />
                     <span className="ml-7">MongoDB, SQL, Redis</span> 
                     <br />
@@ -87,13 +83,21 @@ export const consoleOuput = (
             return (
                 <div>
                     <span className="text-purple-400">1. </span>
-                    <a href="" className="text-teal-400">{" "}LiteShare{" "}</a> - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+                    <div className="text-teal-400">{" "}LiteShare{" "}</div><br />
+                      -{"  "}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+
+                    ----------------------------------------------------------------------------------------------------------<br />
 
                     <span className="text-purple-400">1. </span>
-                    <a href="" className="text-teal-400">{" "}LiteShare{" "}</a> - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+                    <div className="text-teal-400">{" "}LiteShare{" "}</div><br />
+                      -{"  "}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+
+                    ----------------------------------------------------------------------------------------------------------<br />
 
                     <span className="text-purple-400">1. </span>
-                    <a href="" className="text-teal-400">{" "}LiteShare{" "}</a> - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+                    <div className="text-teal-400">{" "}LiteShare{" "}</div><br />
+                      -{"  "}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+
                 </div>
             );
 

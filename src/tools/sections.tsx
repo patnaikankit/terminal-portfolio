@@ -46,17 +46,17 @@ export const sections = (
         else if(currentCommand.toLowerCase().startsWith("p")){
             setCurrentCommand("projects");
         }
-        else if(currentCommand.toLowerCase().startsWith("c")){
+        else if(currentCommand.toLowerCase().startsWith("cl")){
             setCurrentCommand("clear");
         }
         else if(currentCommand.toLowerCase().startsWith("h")){
             setCurrentCommand("help");
         }
-        else if(currentCommand.toLowerCase().startsWith("sk")){
+        else if(currentCommand.toLowerCase().startsWith("s")){
             setCurrentCommand("skills");
         }
-        else if(currentCommand.toLowerCase().startsWith("so")){
-            setCurrentCommand("socials");
+        else if(currentCommand.toLowerCase().startsWith("co")){
+            setCurrentCommand("contact");
         }
         else if(currentCommand.toLowerCase().startsWith("e")){
             setCurrentCommand("experience");
