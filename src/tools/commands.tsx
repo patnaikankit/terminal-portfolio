@@ -69,15 +69,16 @@ export const consoleOuput = (
                 <div>
                     <span className="text-purple-400">Languages -{" "}</span>
                     <br />
-                    <span className="ml-7">C, C++, Javascript, Typescript, Python, Go</span>
+                    <span className="ml-7">C, C++, Javascript, Typescript, Python, Go</span> <br />
 
                     <span className="text-purple-400">Frameworks/Libraries -{" "}</span>
                     <br />
-                    <span className="ml-7">Tailwind, React.js, Node.js, Express.js, Next.js, Numpy, Pandas, Django, Fiber, Gorilla Mux, Firebase</span>                    
+                    <span className="ml-7">Tailwind, React.js, Node.js, Express.js, Next.js, Numpy, Pandas, Django, Fiber, Gorilla Mux, Firebase</span> <br />                
 
                     <span className="text-purple-400">Databases/Infrastructures -{" "}</span>
                     <br />
                     <span className="ml-7">MongoDB, SQL, Redis</span> 
+                    <br />
                 </div>
             );
 
