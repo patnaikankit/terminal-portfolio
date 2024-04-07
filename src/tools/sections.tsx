@@ -10,10 +10,12 @@ export const sections = (
     event: React.KeyboardEvent<HTMLInputElement>,
     setCommand: React.Dispatch<React.SetStateAction<CommandItem[]>>,
     setUpArrowKey: React.Dispatch<React.SetStateAction<number>>,
+    setDownArrowKey: React.Dispatch<React.SetStateAction<number>>,
     setCurrentCommand: React.Dispatch<React.SetStateAction<string>>,
     currentCommand: string,
     command: CommandItem[],
-    UpArrowKey: number
+    UpArrowKey: number,
+    DownArrowKey: number,
 ) : void => {
     if(event.key === "Enter"){
         setCommand((prev) => [
@@ -23,15 +25,26 @@ export const sections = (
             }
         ])
         setCurrentCommand("");
-        setUpArrowKey(0)
+        setUpArrowKey(0);
+        setDownArrowKey(0); 
     }
     else if(event.keyCode === 38){
         if(command.length > 0){
-            setUpArrowKey(UpArrowKey + 1)
+            setUpArrowKey(UpArrowKey + 1);
             if(command.length - UpArrowKey - 1 >= 0){
                 setCurrentCommand(
                     command[command.length - UpArrowKey - 1].command
-                )
+                );
+            }
+        }
+    }
+    else if(event.keyCode === 40){ 
+        if(command.length > 0){ 
+            setDownArrowKey(DownArrowKey - 1);
+            if(command.length + DownArrowKey + 1 >= 0){
+                setCurrentCommand(
+                    command[command.length + DownArrowKey - UpArrowKey + 1].command
+                );
             }
         }
     }

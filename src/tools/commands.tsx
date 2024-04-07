@@ -39,22 +39,22 @@ export const consoleOuput = (
                 return (
                     <div>
                         <span className="text-teal-400">
-                            Mail -{" "}
+                            [Mail]: {" "}
                         </span>
                         <a href="mailto:ankit.patnaik2003@gmail.com" className="underline">ankit.patnaik2003@gmail.com</a><br />
 
                         <span className="text-teal-400">
-                            LinkedIn -{" "}
+                            [LinkedIn]: {" "}
                         </span>
-                        <a href="https://www.linkedin.com/in/ankit-patnaik-102728230/" className="underline">https://www.linkedin.com/in/ankit-patnaik-102728230</a><br />
+                        <a href="https://www.linkedin.com/in/ankit-patnaik-102728230/" className="underline">https://www.linkedin.com/in/ankit-patnaik-102728230</a>{" "}[DM's preferred here]<br />
 
                         <span className="text-teal-400">
-                            Github -{" "}
+                            [Github]: {" "}
                         </span>
                         <a href="https://github.com/patnaikankit" className="underline">https://github.com/patnaikankit</a><br />
 
                         <span className="text-teal-400">
-                            Twitter -{" "}
+                            [Twitter]: {" "}
                         </span>
                         <a href="https://twitter.com/_Ankitpatnaik1_" className="underline">https://twitter.com/_Ankitpatnaik1_</a><br />
                     </div>
@@ -82,27 +82,39 @@ export const consoleOuput = (
             case "projects": 
             return (
                 <div>
-                    <span className="text-purple-400">1. </span>
-                    <div className="text-teal-400">{" "}LiteShare{" "}</div><br />
-                      -{"  "}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+                    <div className="flex items-center">
+                        <span className="text-purple-400 mr-1">1.</span>
+                        <div className="text-teal-400 inline"> Imagix</div> <br />
+                    </div>
+                      -{" "}A platform that enables users to create futuristic images based on the prompt provided by the user.<br />
+                      -{"  "}Link: <a href="https://github.com/patnaikankit/Imagix" className="text-blue-500">[Github]</a>{"  "}<a href="https://imagix-web.netlify.app/" className="text-blue-500">[Live]</a><br />
+                      -{"  "}Technologies: Tailwind, DaisyUI, Typescript, Express.js, MongoDB, OpenAI API<br />
 
-                    ----------------------------------------------------------------------------------------------------------<br />
+                    -----------------------------------------------------------------------------------------------------------------------------<br /><br />
 
-                    <span className="text-purple-400">1. </span>
-                    <div className="text-teal-400">{" "}LiteShare{" "}</div><br />
-                      -{"  "}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+                    <div className="flex items-center">
+                        <span className="text-purple-400 mr-1">2. </span>
+                        <div className="text-teal-400 inline"> LiteShare</div> <br />
+                    </div>
+                      -{"  "}A robust platform to facilitate secure file sharing and chat between two users without the brokerage of a third party.<br />
+                      -{"  "}Link: <a href="https://github.com/patnaikankit/LiteShare" className="text-blue-500">[Github]</a>{"  "}<a href="https://lite-share.vercel.app/" className="text-blue-500">[Live]</a><br />
+                      -{"  "}Technologies: React, Typescript, Node.js, Next.js, Socket.io, WebRTC<br />
 
-                    ----------------------------------------------------------------------------------------------------------<br />
+                      -----------------------------------------------------------------------------------------------------------------------------<br /><br />
 
-                    <span className="text-purple-400">1. </span>
-                    <div className="text-teal-400">{" "}LiteShare{" "}</div><br />
-                      -{"  "}Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam modi pariatur molestias blanditiis fugit est aut officia et provident.<br />
+                    <div className="flex items-center">
+                        <span className="text-purple-400 mr-1">3. </span>
+                        <div className="text-teal-400 inline"> Youtube Summarizer</div> <br />
+                    </div>
+                      -{"  "}An AI tool that can generate a summary based on the YouTube video provided to it.<br />
+                      -{"  "}Link: <a href="https://github.com/patnaikankit/Youtube-Summarizer" className="text-blue-500">[Github]</a>{"  "}<a href="https://youtube-summarizer-seven.vercel.app/" className="text-blue-500">[Live]</a><br />
+                      -{"  "}Technologies: Tailwind, Javascript, Django, Postgresql, Assembly AI API, OpenAI API<br />
 
                 </div>
             );
 
             case "resume": window.open("https://drive.google.com/file/d/1oKr4BroNbW5o2M2aN2nPead7cHMKZC9s/view", "_blank");
-            return "Heading to resume......"
+            return "Opening resume in new tab......"
 
             case "clear": 
                 setCommand([]);

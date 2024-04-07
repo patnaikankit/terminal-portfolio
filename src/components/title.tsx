@@ -2,12 +2,12 @@ export const Title = () => {
     return (
         <div className="mt-3">
             <div className="flex flex-row mb-0.5">
-                    <div className="text-purple-500 font-bold ml-10 selection:bg-yellow-900">
+                    <div className="text-purple-500 font-bold ml-10">
                         {" "}
-                        guest@gollum~${" "}
+                        visitor<span className="text-white">@</span><span className="text-blue-500">gollum:$ ~ {" "}</span>
                     </div>
 
-                    <div className="ml-2 font-mono selection:bg-yellow-900">
+                    <div className="ml-2 font-mono text-amber-500">
                         welcome
                     </div>
                 </div>
