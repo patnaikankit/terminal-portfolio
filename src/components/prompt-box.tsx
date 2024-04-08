@@ -37,30 +37,29 @@ const Command: React.FC = () => {
             {command.map((item, index) => (
                 <div key={index}>
                     <div className="flex flex-row mb-0.5">
-                        <div className="text-purple-500 font-bold ml-10 selection:bg-yellow-900">
+                        <div className="text-purple-500 font-bold ml-10 ">
                             {" "}
-                            visitor<span className="text-white">@</span><span className="text-blue-500">gollum:$ ~ {" "}</span>
+                            visitor<span className="text-white">@</span><span className="text-blue-400">gollum:$ ~ {" "}</span>
                         </div>
 
-                        <div className="ml-2 font-mono selection:bg-yellow-900">
+                        <div className="ml-2 font-mono ">
                             {item.command}
                         </div>
                     </div>
 
-                    <div className="font-mono text-left ml-16 mb-3 selection:bg-yellow-900 mr-10" id="output-content">
+                    <div className="font-mono text-left ml-16 mb-3 " id="output-content">
                         {item.output}
                     </div>
                 </div>
             ))}
             <div className="flex flex-row">
-                <div className="text-purple-500 font-bold ml-10 selection:bg-yellow-900">
+                <div className="text-purple-500 font-bold ml-10">
                     {" "}
-                    visitor<span className="text-white">@</span><span className="text-blue-500">gollum:$ ~ {" "}</span>
+                    visitor<span className="text-white">@</span><span className="text-blue-400">gollum:$ ~ {" "}</span>
                 </div>
 
                 <input 
-                    className="bg-transparent outline-none border-none font-mono ml-2 w-2/3"
-                    style={{ color: '#F59E0B' }}
+                    className="bg-transparent outline-none border-none font-mono ml-2 w-2/3 text-amber-500"
                     type="text" 
                     ref={inputRef} 
                     value={currentCommand} 
@@ -76,7 +75,7 @@ const Command: React.FC = () => {
                             currentCommand,
                             command,
                             UpArrowKey,
-                            DownArrowKey 
+                            DownArrowKey,
                         );
                     }}
                 />

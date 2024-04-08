@@ -29,9 +29,11 @@ export const consoleOuput = (
 
             case "about": 
             return (
-                <div>
-                    Hi! Thanks for stalkng me!<br /> I am{" "} <span className="text-purple-400">Ankit Patnaik</span>, a 3rd year undergraduate student at{" "} <span className="text-teal-400">{" "}
-                    <a href="http://nita.ac.in">National Institute of Technology Agartala</a></span> pursuing my B.Tech in Electrical Engineering.<br />
+                <div className="w-3/4">
+                    Hi! Thanks for social researching(I don't like the other s word) on me!<br /> I am{" "} <span className="text-purple-400">Ankit Patnaik</span>, a 3rd year undergraduate student at{" "} <span className="text-teal-400">{" "}
+                    <a href="http://nita.ac.in">National Institute of Technology Agartala</a></span> pursuing B.Tech in Electrical Engineering. I have predominantly focused on web technologies for my work, primarily delving into the MERN stack. However, I've recently started exploring core computer science disciplines to deepen my understanding. Alongside my proficiency in MERN, I am also adept at utilizing Python and Go for various projects and tasks.<br /><br />
+
+                    <span className="text-blue-400">PS:</span> Just as <span className="text-teal-400">Gollum</span> aided <span className="text-teal-400">Frodo</span> and <span className="text-teal-400">Sam</span> in navigating their way through the perilous realm of Mordor, here he stands prepared to guide you through my portfolio!
                 </div>
             );
 
@@ -69,7 +71,7 @@ export const consoleOuput = (
 
                     <span className="text-teal-400">Frameworks/Libraries -{" "}</span>
                     <br />
-                    <span className="ml-7">Tailwind, React.js, Node.js, Express.js, Next.js, Numpy, Pandas, Django, Fiber, Gorilla Mux, Firebase</span> <br />                
+                    <span className="ml-7">Tailwind, React.js, Node.js, Express.js, Next.js, Django, Fiber, Gorilla Mux, Firebase</span> <br />                
 
                     <span className="text-teal-400">Databases/Infrastructures -{" "}</span>
                     <br />
@@ -86,8 +88,10 @@ export const consoleOuput = (
                         <span className="text-purple-400 mr-1">1.</span>
                         <div className="text-teal-400 inline"> Imagix</div> <br />
                     </div>
+                      <div className="w-3/4">
                       -{" "}A platform that enables users to create futuristic images based on the prompt provided by the user.<br />
-                      -{"  "}Link: <a href="https://github.com/patnaikankit/Imagix" className="text-blue-500">[Github]</a>{"  "}<a href="https://imagix-web.netlify.app/" className="text-blue-500">[Live]</a><br />
+                      </div>
+                      -{"  "}Link: <a href="https://github.com/patnaikankit/Imagix" className="text-blue-500">[Github]</a>{" | "}<a href="https://imagix-web.netlify.app/" className="text-blue-500">[Live]</a><br />
                       -{"  "}Technologies: Tailwind, DaisyUI, Typescript, Express.js, MongoDB, OpenAI API<br />
 
                     -----------------------------------------------------------------------------------------------------------------------------<br /><br />
@@ -96,8 +100,10 @@ export const consoleOuput = (
                         <span className="text-purple-400 mr-1">2. </span>
                         <div className="text-teal-400 inline"> LiteShare</div> <br />
                     </div>
+                      <div className="w-3/4">
                       -{"  "}A robust platform to facilitate secure file sharing and chat between two users without the brokerage of a third party.<br />
-                      -{"  "}Link: <a href="https://github.com/patnaikankit/LiteShare" className="text-blue-500">[Github]</a>{"  "}<a href="https://lite-share.vercel.app/" className="text-blue-500">[Live]</a><br />
+                      </div>
+                      -{"  "}Link: <a href="https://github.com/patnaikankit/LiteShare" className="text-blue-500">[Github]</a>{" | "}<a href="https://lite-share.vercel.app/" className="text-blue-500">[Live]</a><br />
                       -{"  "}Technologies: React, Typescript, Node.js, Next.js, Socket.io, WebRTC<br />
 
                       -----------------------------------------------------------------------------------------------------------------------------<br /><br />
@@ -107,7 +113,7 @@ export const consoleOuput = (
                         <div className="text-teal-400 inline"> Youtube Summarizer</div> <br />
                     </div>
                       -{"  "}An AI tool that can generate a summary based on the YouTube video provided to it.<br />
-                      -{"  "}Link: <a href="https://github.com/patnaikankit/Youtube-Summarizer" className="text-blue-500">[Github]</a>{"  "}<a href="https://youtube-summarizer-seven.vercel.app/" className="text-blue-500">[Live]</a><br />
+                      -{"  "}Link: <a href="https://github.com/patnaikankit/Youtube-Summarizer" className="text-blue-500">[Github]</a>{" | "}<a href="https://youtube-summarizer-seven.vercel.app/" className="text-blue-500">[Live]</a><br />
                       -{"  "}Technologies: Tailwind, Javascript, Django, Postgresql, Assembly AI API, OpenAI API<br />
 
                 </div>
