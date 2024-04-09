@@ -8,7 +8,7 @@ export const Title = () => {
                     </div>
 
                     <div className="ml-2 font-mono text-amber-500">
-                        (c){" "}ANKIT.{" "}All rights reserved {new Date().getFullYear()}
+                        (c){" "}(ANKIT) Not a Corporation.{" "}All rights reserved {new Date().getFullYear()}
                     </div>
 
                 </div>

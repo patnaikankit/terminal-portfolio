@@ -31,7 +31,7 @@ export const consoleOuput = (
             return (
                 <div className="w-3/4">
                     Hi! Thanks for social researching(I don't like the other s word) on me!<br /> I am{" "} <span className="text-purple-400">Ankit Patnaik</span>, a 3rd year undergraduate student at{" "} <span className="text-teal-400">{" "}
-                    <a href="http://nita.ac.in">National Institute of Technology Agartala</a></span> pursuing B.Tech in Electrical Engineering. I have predominantly focused on web technologies for my work, primarily delving into the MERN stack. However, I've recently started exploring core computer science disciplines to deepen my understanding. Alongside my proficiency in MERN, I am also adept at utilizing Python and Go for various projects and tasks.<br /><br />
+                    <a href="http://nita.ac.in">National Institute of Technology Agartala</a></span> pursuing B.Tech in Electrical Engineering. I have predominantly focused on web technologies for my work, primarily delving into MERN stack. However, I've recently started exploring core computer science disciplines to deepen my understanding. Alongside my proficiency in MERN, I am also adept at utilizing Python and Go for various projects and tasks.<br /><br />
 
                     <span className="text-blue-400">PS:</span> Just as <span className="text-teal-400">Gollum</span> aided <span className="text-teal-400">Frodo</span> and <span className="text-teal-400">Sam</span> in navigating their way through the perilous realm of Mordor, here he stands prepared to guide you through my portfolio!
                 </div>

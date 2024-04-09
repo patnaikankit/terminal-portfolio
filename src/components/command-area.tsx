@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { sections } from "../tools/sections";
 
-interface CommandItem{
+interface CommandItem {
     command: string,
     output: string | JSX.Element;
 }
@@ -13,6 +13,8 @@ const Command: React.FC = () => {
     const [DownArrowKey, setDownArrowKey] = useState<number>(0); 
 
     const inputRef = useRef<HTMLInputElement>(null);
+    const outputRef = useRef<HTMLDivElement>(null);
+    const bottomRef = useRef(null)
 
     useEffect(() => {
         const handleClick = (event: MouseEvent) => {
@@ -32,8 +34,21 @@ const Command: React.FC = () => {
         };
     }, []);
 
+    useEffect(() => {
+        scrollToBottom();
+      });
+    
+      const scrollToBottom = () => {
+        const currentElement = bottomRef.current as HTMLElement | null;
+        if (currentElement) {
+          currentElement.scrollIntoView();
+        }
+      };
+      
+    
+    
     return (
-        <div>
+        <div ref={bottomRef}>
             {command.map((item, index) => (
                 <div key={index}>
                     <div className="flex flex-row mb-0.5">
@@ -42,12 +57,12 @@ const Command: React.FC = () => {
                             visitor<span className="text-white">@</span><span className="text-blue-400">gollum:$ ~ {" "}</span>
                         </div>
 
-                        <div className="ml-2 font-mono ">
+                        <div className="ml-2 font-mono text-amber-500">
                             {item.command}
                         </div>
                     </div>
 
-                    <div className="font-mono text-left ml-16 mb-3 " id="output-content">
+                    <div className="font-mono text-left ml-16 mb-3 " id="output-content" ref={outputRef}>
                         {item.output}
                     </div>
                 </div>
@@ -66,6 +81,10 @@ const Command: React.FC = () => {
                     onChange={(e) => setCurrentCommand(e.target.value)}
                     autoFocus={true} 
                     onKeyDown={(e) => {
+                        if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Tab' || e.key === 'Enter') {
+                            e.preventDefault();
+                          }
+
                         sections(
                             e,
                             setCommand,

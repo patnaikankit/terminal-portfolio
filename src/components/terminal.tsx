@@ -1,5 +1,5 @@
 import { Header } from "./header";
-import Command from "./prompt-box";
+import Command from "./command-area";
 import { Title } from "./title";
 
 const Terminal = () => {

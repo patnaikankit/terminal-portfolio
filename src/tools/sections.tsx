@@ -27,24 +27,25 @@ export const sections = (
         setCurrentCommand("");
         setUpArrowKey(0);
         setDownArrowKey(0); 
-        window.scrollTo(0, document.body.scrollHeight);
     }
-    else if(event.keyCode === 38){
+    else if(event.key === "ArrowUp"){
         if(command.length > 0){
             setUpArrowKey(UpArrowKey + 1);
             if(command.length - UpArrowKey - 1 >= 0){
                 setCurrentCommand(
                     command[command.length - UpArrowKey - 1].command
                 );
+                setDownArrowKey(UpArrowKey);
             }
         }
     }
-    
-    else if(event.keyCode === 40){ 
+
+    else if(event.key === "ArrowDown"){ 
         if(command.length > 0){ 
             if (DownArrowKey > 0) {
                 setDownArrowKey(DownArrowKey - 1);
                 setCurrentCommand(command[command.length - DownArrowKey].command);
+                setUpArrowKey(command.length - DownArrowKey);
             }
         }
     }
