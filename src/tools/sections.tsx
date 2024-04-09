@@ -27,6 +27,7 @@ export const sections = (
         setCurrentCommand("");
         setUpArrowKey(0);
         setDownArrowKey(0); 
+        window.scrollTo(0, document.body.scrollHeight);
     }
     else if(event.keyCode === 38){
         if(command.length > 0){
@@ -38,16 +39,16 @@ export const sections = (
             }
         }
     }
+    
     else if(event.keyCode === 40){ 
         if(command.length > 0){ 
-            setDownArrowKey(DownArrowKey - 1);
-            if(command.length + DownArrowKey + 1 >= 0){
-                setCurrentCommand(
-                    command[command.length + DownArrowKey - UpArrowKey + 1].command
-                );
+            if (DownArrowKey > 0) {
+                setDownArrowKey(DownArrowKey - 1);
+                setCurrentCommand(command[command.length - DownArrowKey].command);
             }
         }
     }
+    
     else if(event.key === "Tab"){
         event.preventDefault();
         if(currentCommand.toLowerCase().startsWith("a")){

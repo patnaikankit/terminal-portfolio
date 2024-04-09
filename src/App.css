@@ -4,7 +4,19 @@
 
 .App {
   text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-::-webkit-scrollbar {
-  display: none;
+
+.App::-webkit-scrollbar {
+  width: 12px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: rgb(168, 85, 247); /* Set the color of the scrollbar thumb */
+  border-radius: 6px;
+}
+
+.App::-webkit-scrollbar-track {
+  background-color: rgb(38, 38, 38); /* Set the color of the scrollbar track */
 }
