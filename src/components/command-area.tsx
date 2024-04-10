@@ -11,6 +11,7 @@ const Command: React.FC = () => {
     const [currentCommand, setCurrentCommand] = useState<string>("");
     const [UpArrowKey, setUpArrowKey] = useState<number>(0);
     const [DownArrowKey, setDownArrowKey] = useState<number>(0); 
+    const [responseFetched, setResponseFetched] = useState<boolean>(false);
 
     const inputRef = useRef<HTMLInputElement>(null);
     const outputRef = useRef<HTMLDivElement>(null);
@@ -36,18 +37,40 @@ const Command: React.FC = () => {
 
     useEffect(() => {
         scrollToBottom();
-      });
+      }, [command]);
     
       const scrollToBottom = () => {
         const currentElement = bottomRef.current as HTMLElement | null;
         if (currentElement) {
-          currentElement.scrollIntoView();
+          currentElement.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
         }
       };
+
+      const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Tab') {
+            e.preventDefault();
+        }
+
+        sections(
+            e,
+            setCommand,
+            setUpArrowKey,
+            setDownArrowKey, 
+            setCurrentCommand,
+            currentCommand,
+            command,
+            UpArrowKey,
+            DownArrowKey,
+        );
+
+        if (e.key === 'Enter') {
+            setResponseFetched(true);
+        }
+    };
       
     
-    
     return (
+        // input command
         <div ref={bottomRef}>
             {command.map((item, index) => (
                 <div key={index}>
@@ -67,6 +90,8 @@ const Command: React.FC = () => {
                     </div>
                 </div>
             ))}
+
+            {/* response */}
             <div className="flex flex-row">
                 <div className="text-purple-500 font-bold ml-10">
                     {" "}
@@ -80,23 +105,7 @@ const Command: React.FC = () => {
                     value={currentCommand} 
                     onChange={(e) => setCurrentCommand(e.target.value)}
                     autoFocus={true} 
-                    onKeyDown={(e) => {
-                        if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Tab' || e.key === 'Enter') {
-                            e.preventDefault();
-                          }
-
-                        sections(
-                            e,
-                            setCommand,
-                            setUpArrowKey,
-                            setDownArrowKey, 
-                            setCurrentCommand,
-                            currentCommand,
-                            command,
-                            UpArrowKey,
-                            DownArrowKey,
-                        );
-                    }}
+                    onKeyDown={handleKeyDown}
                 />
             </div>
         </div>

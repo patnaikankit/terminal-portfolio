@@ -23,7 +23,7 @@ export const consoleOuput = (
                     <span className="text-teal-400 ml-3"> projects</span> - Projects I have made so far<br />
                     <span className="text-teal-400 ml-3"> resume</span> - Checkout my resume<br />
                     <span className="text-teal-400 ml-3"> clear</span> - Clear the terminal<br />
-                    {/* <span className="text-purple-400 ml-3"> experience</span> - Want to know me better<br /> */}
+                    {/* <span className="text-purple-400 ml-3"> experience</span> - My work experience<br /> */}
                 </div>
             );
 
@@ -118,6 +118,32 @@ export const consoleOuput = (
 
                 </div>
             );
+
+            case "experience":
+                return (
+                    <div className="w-3/4">
+                        <span className="text-teal-400 ml-3">1. </span>
+                        <span className="text-purple-400 ml-3">INDOTABI TOURS</span><br />
+                        <span className="ml-5">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat suscipit explicabo pariatur magnam nobis sed ullam tempora praesentium animi a.
+                        </span>
+                        <br />
+                        <span className="text-red-400 ml-3"> Accomplishments</span>
+                        <br />
+                        <span className="ml-7">
+                            <span className="text-teal-400 ml-3"> a) </span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, fugiat!
+                        </span>
+                        <br />
+                        <span className="ml-7">
+                            <span className="text-teal-400 ml-3"> b) </span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore ad odio laborum soluta tenetur.
+                        </span>
+                        <br />
+                        <span className="ml-7">
+                            <span className="text-teal-400 ml-3"> c) </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, vel!
+                        </span>
+                        <br />
+                    </div>
+                )
 
             case "resume": window.open("https://drive.google.com/file/d/1oKr4BroNbW5o2M2aN2nPead7cHMKZC9s/view", "_blank");
             return "Opening resume in new tab......"

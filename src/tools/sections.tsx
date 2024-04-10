@@ -28,25 +28,20 @@ export const sections = (
         setUpArrowKey(0);
         setDownArrowKey(0); 
     }
-    else if(event.key === "ArrowUp"){
-        if(command.length > 0){
+
+    else if (event.key === "ArrowUp") {
+        if (command.length > 0 && UpArrowKey < command.length) {
             setUpArrowKey(UpArrowKey + 1);
-            if(command.length - UpArrowKey - 1 >= 0){
-                setCurrentCommand(
-                    command[command.length - UpArrowKey - 1].command
-                );
-                setDownArrowKey(UpArrowKey);
-            }
+            setCurrentCommand(command[command.length - UpArrowKey - 1].command);
+            setDownArrowKey(UpArrowKey);
         }
     }
 
-    else if(event.key === "ArrowDown"){ 
-        if(command.length > 0){ 
-            if (DownArrowKey > 0) {
-                setDownArrowKey(DownArrowKey - 1);
-                setCurrentCommand(command[command.length - DownArrowKey].command);
-                setUpArrowKey(command.length - DownArrowKey);
-            }
+    else if (event.key === "ArrowDown") { 
+        if (command.length > 0 && DownArrowKey > 0) {
+            setDownArrowKey(DownArrowKey - 1);
+            setCurrentCommand(command[command.length - DownArrowKey].command);
+            setUpArrowKey(command.length - DownArrowKey);
         }
     }
     
