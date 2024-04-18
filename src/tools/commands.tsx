@@ -71,11 +71,11 @@ export const consoleOuput = (
 
                     <span className="text-teal-400">Frameworks/Libraries -{" "}</span>
                     <br />
-                    <span className="ml-7">Tailwind, React.js, Node.js, Express.js, Next.js, Django, Fiber, Gorilla Mux, Firebase</span> <br />                
+                    <span className="ml-7">Tailwind, React.js, Express.js, Next.js, Django, Fiber, Gorilla Mux, Firebase</span> <br />                
 
                     <span className="text-teal-400">Databases/Infrastructures -{" "}</span>
                     <br />
-                    <span className="ml-7">MongoDB, SQL, Redis</span> 
+                    <span className="ml-7">MongoDB, SQL, Redis, Docker, Nginx, AWS</span> 
                     <br />
                 </div>
             );
@@ -143,7 +143,7 @@ export const consoleOuput = (
                 return (
                     <div className="w-3/4">
                         <span className="text-teal-400 ml-3">1. </span>
-                        <span className="text-purple-400 ml-3">INDOTABI TOURS</span><br />
+                        <span className="text-purple-400 ml-3">Lorem, ipsum.</span><br />
                         <span className="ml-5">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat suscipit explicabo pariatur magnam nobis sed ullam tempora praesentium animi a.
                         </span>
@@ -165,7 +165,7 @@ export const consoleOuput = (
                     </div>
                 )
 
-            case "resume": window.open("https://drive.google.com/file/d/1oKr4BroNbW5o2M2aN2nPead7cHMKZC9s/view", "_blank");
+            case "resume": window.open("https://drive.google.com/file/d/1ELze6nRRrjlLSlbExDGUrHqGqHSwgmH5/view?usp=sharing", "_blank");
             return "Opening resume in new tab......"
 
             case "clear": 

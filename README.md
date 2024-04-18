@@ -26,6 +26,6 @@ npm run dev
 
 ## Inspiration and Credits
 
-These following websites provided some inspiration for creating this type of terminal website. Only some features and functionalities are inspired by these following websites. All codes are written on my own.
+The following website provided some inspiration for creating this type of terminal website. Only some features and functionalities are inspired by the following website. All codes are written on my own.
 
 - [Sat Naing](https://terminal.satnaing.dev/)
