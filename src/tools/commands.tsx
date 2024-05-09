@@ -165,7 +165,7 @@ export const consoleOuput = (
                     </div>
                 )
 
-            case "resume": window.open("https://drive.google.com/file/d/1bGlVssmU3kHJ7FchpzeImiJFWp4Osuvf/view?usp=sharing", "_blank");
+            case "resume": window.open("https://drive.google.com/file/d/1EQA1TH34e2NJb-nufvEFjgJyvuI7-ILD/view?usp=sharing", "_blank");
             return "Opening resume in new tab......"
 
             case "clear": 
