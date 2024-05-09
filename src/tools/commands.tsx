@@ -48,7 +48,7 @@ export const consoleOuput = (
                         <span className="text-teal-400">
                             [LinkedIn]: {" "}
                         </span>
-                        <a href="https://www.linkedin.com/in/ankit-patnaik-102728230/" target="_blank">ankit-patnaik-102728230</a>{" "}[DM's preferred here]<br />
+                        <a href="https://www.linkedin.com/in/ankit-patnaik-102728230/" target="_blank">ankit-patnaik</a>{" "}[DM's preferred here]<br />
 
                         <span className="text-teal-400">
                             [Github]: {" "}
