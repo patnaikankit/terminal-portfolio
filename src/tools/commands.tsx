@@ -175,7 +175,7 @@ export const consoleOuput = (
             default:
                 return(
                     <div>
-                        <span className="text-red-600">Command not found.</span>
+                        <span className="text-red-500">Command Not Found!</span>
                         <br />
                         Type <span className="text-purple-400">help</span> to get a list of valid commands.
                     </div>

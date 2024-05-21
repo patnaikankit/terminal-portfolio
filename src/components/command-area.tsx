@@ -75,7 +75,7 @@ const Command: React.FC = () => {
             {command.map((item, index) => (
                 <div key={index}>
                     <div className="flex flex-row mb-0.5">
-                        <div className="text-purple-500 font-bold ml-10 ">
+                        <div className="text-purple-400 font-bold ml-10 ">
                             {" "}
                             visitor<span className="text-white">@</span><span className="text-blue-400">gollum:$ ~ {" "}</span>
                         </div>
@@ -93,7 +93,7 @@ const Command: React.FC = () => {
 
             {/* input command */}
             <div className="flex flex-row">
-                <label htmlFor="commandInput" className="text-purple-500 font-bold ml-10">
+                <label htmlFor="commandInput" className="text-purple-400 font-bold ml-10">
                     {" "}
                     visitor<span className="text-white">@</span><span className="text-blue-400">gollum:$ ~ {" "}</span>
                 </label>
